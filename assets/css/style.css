@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+    --dark-bg: #000;
+    --light-bg: #fff;
+    --timer-color-dark: #fff;
+    --timer-color-light: #000;
+    --buttons-bg: #242424;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size:  1.6rem;
+    background-color: var(--dark-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button__light, .button__dark {
+    position: absolute;
+    top: 3.2rem;
+    right: 3.2rem;
+}
+
+.button__dark {
+    display: none;
+}
+
+.main__timer {
+    color: var(--timer-color-dark);
+    text-align: center;
+    font-size: 9.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.buttons {
+    background-color: var(--buttons-bg);
+    border-radius: 9999px;
+    padding: 2.2rem 4rem;
+    display: flex;
+    gap: 1.6rem
+}
+
+.button-disable{
+    display: none;
+}
+
+/*Light Moded*/
+body.light {
+    background-color: var(--light-bg);
+}
+
+body.light .button__light {
+    display: none;
+}
+
+body.light .button__dark {
+    display: block;
+}
+
+body.light .main__timer {
+    color: var(--timer-color-light)
+}

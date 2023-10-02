@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="assets/js/main.js" defer type="module"></script>
+
+    <link rel="shortcut icon" href="assets/imgs/favicon.svg" type="image/x-svg">
+
+    <title>Focus Time</title>
+</head>
+<body>
+    
+    <button class="button__light"><span class="sr-only">Ativar light mode</span><img src="assets/imgs/light.svg" alt="Botão para o light mode"></button>
+    <button class="button__dark"><span class="sr-only">Ativar dark mode</span> <img src="assets/imgs/dark.svg" alt="Botão para o dark mode"></button>
+
+    <main class="main">
+        <p class="main__timer"> <span class="timer__minutes">00</span>:<span class="timer__seconds">00</span> </p>
+        <div class="buttons">
+            <button data-action="toggleRunning" class="button__play"><img src="assets/imgs/play.svg" alt="botão para dá play"></button>
+            <button data-action="toggleRunning" class="button__pause button-disable"><img src="assets/imgs/pause.svg" alt="botão para pausar"></button>
+            <button data-action="set" class="button__stopwatch"><img src="assets/imgs/timer.svg" alt="botão para mudar tempo do cronometro"></button>
+            <button data-action="stop" class="button__stop button-disable"><img src="assets/imgs/stop.svg" alt="Botão para zerar cronometro"></button>
+            <button data-action="toggleMusic" class="button_speakerOff"><img src="assets/imgs/speaker.svg" alt="Botão para ativar som de fundo"></button>
+            <button data-action="toggleMusic" class="button__speakerOn button-disable"><img src="assets/imgs/speaker-on.svg" alt="botão para desligar som"></button>
+        </div>
+    </main>
+</body>
+</html>
