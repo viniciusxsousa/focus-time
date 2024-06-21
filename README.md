@@ -24,3 +24,7 @@ Focus Time é um temporizador interativo desenvolvido para ajudar os usuários a
 ### :desktop_computer: Previa
 
 
+
+
+https://github.com/viniciusxsousa/focus-time/assets/81489425/592683db-1def-4828-83c6-e3daa539e55a
+
