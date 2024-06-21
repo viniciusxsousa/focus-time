@@ -13,7 +13,9 @@ const controls = {
     action: '',
     observeClick() {
         this.controls.addEventListener('click', (event) => {
-            this.action = event.path[1].dataset.action;
+            
+            this.action = event.target.dataset.action;
+            
 
             switch(this.action) {
                 case 'toggleRunning':
